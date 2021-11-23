@@ -37,7 +37,7 @@ header {
 }
 
 footer {
-    font-size: #357b70;
+    font-size: 20px;
     font-weight: 700;
 }
 
@@ -202,7 +202,7 @@ main div img:hover {
 .profile .profile__my-info:nth-child(2) {
     -webkit-box-flex: 1 1 200px;
     -ms-flex-positive: 1 1 200px;
-    flex-grow: 1 1 200px;
+    flex: 1 1 200px;
     text-align: center;
     padding: 50px 50px;
 }
