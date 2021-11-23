@@ -49,7 +49,7 @@
  }
  
  footer {
-     font-size: var(--secondary-txt-color);
+     font-size: var(--big-font-size);
      font-weight: var(--secondary-font-weight);
  }
  
@@ -158,7 +158,7 @@
  }
  
  .profile .profile__my-info:nth-child(2) {
-     flex-grow: 1 1 200px;
+     flex: 1 1 200px;
      text-align: var(--m-text-align);
      padding: 50px 50px;
  }
