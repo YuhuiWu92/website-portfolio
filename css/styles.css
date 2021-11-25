@@ -167,9 +167,10 @@
  .grid {
      display: -ms-grid;
      display: grid;
-     -ms-grid-template-columns: 1fr 1fr 1fr 1fr;
-     grid-template-columns: 1fr 1fr 1fr 1fr;
-     -ms-grid-gap: 20px;
+     -ms-grid-columns: 1fr 1fr 1fr 1fr;
+     /* adjusted */
+     grid-template-columns: repeat( 4, 1fr);
+     /* -ms-grid-gap: 20px; */
      grid-gap: 20px;
      padding: 20px;
      /* -ms-align-items: center; */
