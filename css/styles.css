@@ -166,10 +166,10 @@
  
  .grid {
      display: grid;
-     grid-template-columns: 1fr 1fr 1fr 1fr;
-     grid-gap: 20px;
+     -ms-grid-template-columns: 1fr 1fr 1fr 1fr;
+     -ms-grid-gap: 20px;
      padding: 20px;
-     align-items: center;
+     -ms-align-items: center;
  }
  /* define grid-item vars */
  
