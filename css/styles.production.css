@@ -26,7 +26,7 @@ h1 {
 
 h2 {
     text-align: center;
-    color: #357b70;
+    color: #2c3a77;
 }
 
 header {
@@ -186,7 +186,7 @@ button:focus {
     padding: 20px;
 }
 
-main div img {
+.profile__photo__me {
     border-radius: 20px;
     -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
@@ -195,7 +195,7 @@ main div img {
     transition: all 1s;
 }
 
-main div img:hover {
+.profile__photo__me:hover {
     -webkit-transform: rotate(20deg);
     -ms-transform: rotate(20deg);
     transform: rotate(20deg);
@@ -220,8 +220,8 @@ main div img:hover {
 .grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 20px 1fr ;
+    grid-template-columns: 1fr 1fr ;
     grid-gap: 20px;
     padding: 20px;
     -webkit-box-align: center;
@@ -233,13 +233,13 @@ main div img:hover {
 /* define grid-item vars */
 
 .grid-item {
-    background-color: #ddd;
+    background-color: rgb(242, 216, 220);
     text-align: center;
-    color: #06c;
+    color: black;
     padding: 5px 10px;
-    border: 1px solid #06c;
-    -webkit-box-shadow: 8px 5px 5px #06c;
-    box-shadow: 8px 5px 5px #06c;
+    border: 1px solid grey;
+    -webkit-box-shadow: 8px 5px 5px rgba(128, 128, 128, 0.363);
+    box-shadow: 8px 5px 5px rgba(128, 128, 128, 0.363);
 }
 
 @media all and (max-width: 500px) {

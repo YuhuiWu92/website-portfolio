@@ -8,7 +8,7 @@
      --main-bg-color: #f4f4f4;
      --main-txt-color: #333;
      --main-txt-family: 'Lato', sans-serif;
-     --secondary-txt-color: #357b70;
+     --secondary-txt-color: #513ac7bf;
      --hover-color: rgb(148, 22, 22);
      --main-font-weigt: 400;
      --main-font-size: 14px;
@@ -145,14 +145,14 @@
      justify-content: center;
      padding: var(--leftright-border);
  }
- 
- main div img {
+ /* main div img */
+.profile__photo__me{
      border-radius: 20px;
      box-shadow: 5px 5px 5px var(--main-border-shadow);
      transition: all 1s;
  }
- 
- main div img:hover {
+ /* main div img:hover */
+ .profile__photo__me {
      transform: rotate(20deg);
  }
  
@@ -171,7 +171,7 @@
  .grid {
      display: -ms-grid;
      display: grid;
-     -ms-grid-columns: 1fr 1fr 1fr 1fr;
+     -ms-grid-columns: 1fr 1fr;
      /* adjusted */
      grid-template-columns: repeat( 4, 1fr);
      /* -ms-grid-gap: 20px; */
@@ -207,7 +207,7 @@
      }
  }
  
- @media all and (max-width: 750px) {
+@media all and (max-width: 750px) {
      .grid {
          grid-gap: 10px;
      }
