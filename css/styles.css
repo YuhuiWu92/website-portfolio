@@ -16,7 +16,7 @@
      --main-font-weight: 400;
      --secondary-font-weight: 700;
      --m-text-align: center;
-     --header-bg-color: rgb(242, 216, 220);
+     --header-bg-color: rgba(123, 115, 116, 0.879);
      --no-text-decoration: none;
      --main-border-shadow: rgba(0, 0, 0, 0.3);
      --main-width: 100%;
@@ -49,7 +49,7 @@
  }
  
  footer {
-     font-size: var(--secondary-txt-color);
+     font-size: var(--big-font-size);
      font-weight: var(--secondary-font-weight);
  }
  
@@ -122,6 +122,11 @@
  .page-header__item {
      flex: 0 1 200px;
  }
+ .page-header__logo {
+    flex: 0 1 200px;
+    border-radius: 20px;
+
+}
  
  .page-header__item:last-child {
      flex-grow: 1;
@@ -158,7 +163,7 @@
  }
  
  .profile .profile__my-info:nth-child(2) {
-     flex-grow: 1 1 200px;
+     flex: 1 1 200px;
      text-align: var(--m-text-align);
      padding: 50px 50px;
  }
