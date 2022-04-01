@@ -170,11 +170,15 @@
  /* work page */
  
  .grid {
+     display: -ms-grid;
      display: grid;
-     grid-template-columns: 1fr 1fr 1fr 1fr;
+     -ms-grid-columns: 1fr 1fr 1fr 1fr;
+     /* adjusted */
+     grid-template-columns: repeat( 4, 1fr);
+     /* -ms-grid-gap: 20px; */
      grid-gap: 20px;
      padding: 20px;
-     align-items: center;
+     /* -ms-align-items: center; */
  }
  /* define grid-item vars */
  
