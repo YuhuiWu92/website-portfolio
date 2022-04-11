@@ -67,10 +67,11 @@ input:focus {
 .button {
     border: none;
     font-family: inherit;
-    background-color: rgb(242, 216, 220);
+    background-color: rgba(0, 0, 0, 0.3);
     color: #333;
     text-decoration: none;
     padding: 2px;
+    margin: 5px;
     border-radius: 3px;
     -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
@@ -88,10 +89,11 @@ button {
     background-color: rgba(123, 115, 116, 0.879);
     color: #333;
     text-decoration: none;
+    margin: 5px;
     padding: 2px;
     border-radius: 3px;
     -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
     -webkit-transition-duration: 0.2s;
     -o-transition-duration: 0.2s;
     transition-duration: 0.2s;
@@ -170,7 +172,11 @@ button:focus {
 
 
 /* main */
-
+.text-box {
+    
+    padding: 10px;
+    margin: 15px;
+}
 .profile {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -202,8 +208,9 @@ button:focus {
 }
 
 .profile .profile__photo:nth-child(1) {
-    width: 200px;
-    height: 300px;
+    -webkit-box-flex: 1 1 300px;
+    -ms-flex-positive: 1 1 300px;
+    padding: 50px 100px;
 }
 
 .profile .profile__my-info:nth-child(2) {

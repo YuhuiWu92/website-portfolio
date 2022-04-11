@@ -80,9 +80,10 @@
      background-color: var(--header-bg-color);
      color: var(--main-txt-color);
      text-decoration: var(--no-text-decoration);
+     margin: 5px;
      padding: 2px;
      border-radius: 3px;
-     box-shadow: 2px 2px 2px var(--main-border-shadow);
+     box-shadow: 1px 2px 2px var(--main-border-shadow);
      transition-duration: 0.2s;
      transition-property: opacity;
  }
@@ -137,7 +138,11 @@
      margin-left: 15px;
  }
  /* main */
- 
+ .text-box {
+     
+     padding: 10px;
+     margin: 10px;
+ }
  .profile {
      display: flex;
      width: var(--main-width);
@@ -157,8 +162,8 @@
  }
  
  .profile .profile__photo:nth-child(1) {
-     width: 200px;
-     height: 300px;
+    flex: 1 1 200px;
+    padding: 50px 100px;
  }
  
  .profile .profile__my-info:nth-child(2) {
