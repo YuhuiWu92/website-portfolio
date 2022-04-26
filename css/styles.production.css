@@ -113,8 +113,15 @@ button:focus {
 .hobbies {
     list-style: none;
     color: #357b70;
-    font-size: 18px;
+    font-size: 20px;
+    text-align:left;
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 220px;
+    padding-right: 220px;
+   
 }
+
 
 .botton__secondary {
     background-color: #357b70;
