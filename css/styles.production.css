@@ -113,7 +113,7 @@ button:focus {
 .hobbies {
     list-style: none;
     color: #357b70;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .botton__secondary {
@@ -278,80 +278,81 @@ button:focus {
 
 
 /* about page  */
-
-@-webkit-keyframes color-change {
-    0% {
-        fill: rgb(242, 216, 220);
-    }
-    100% {
-        fill: rgb(148, 22, 22);
-    }
-}
-
-@keyframes color-change {
-    0% {
-        fill: rgb(242, 216, 220);
-    }
-    100% {
-        fill: rgb(148, 22, 22);
-    }
-}
-
-.sun {
-    -webkit-animation: 4s color-change infinite alternate linear;
-    animation: 4s color-change infinite alternate linear;
-}
-
-@-webkit-keyframes cloud-move {
+.about-photo {
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 30%);
+  
+ }
+.skill-container{
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  @keyframes load{
     from {
-        -webkit-transform: translate(0, 50px);
-        transform: translate(0, 50px);
+      width: 0%
     }
-    to {
-        -webkit-transform: translate(200px, 50px);
-        transform: translate(200px, 50px);
-    }
-}
-
-@keyframes cloud-move {
+  }
+  @-webkit-keyframes load{
     from {
-        -webkit-transform: translate(0, 50px);
-        transform: translate(0, 50px);
+      width: 0%
     }
-    to {
-        -webkit-transform: translate(200px, 50px);
-        transform: translate(200px, 50px);
-    }
-}
-
-.cloud-front {
-    -webkit-animation: 30s cloud-move infinite alternate linear;
-    animation: 30s cloud-move infinite alternate linear;
-}
-
-@-webkit-keyframes cloud-move-reverse {
+  }
+  @-moz-keyframes load{
     from {
-        -webkit-transform: translate(446px, 48px);
-        transform: translate(446px, 48px);
+      width: 0%
     }
-    to {
-        -webkit-transform: translate(100px, 48px);
-        transform: translate(100px, 48px);
-    }
-}
-
-@keyframes cloud-move-reverse {
+  }
+  @-o-keyframes load{
     from {
-        -webkit-transform: translate(446px, 48px);
-        transform: translate(446px, 48px);
+      width: 0%
     }
-    to {
-        -webkit-transform: translate(100px, 48px);
-        transform: translate(100px, 48px);
-    }
-}
-
-.cloud-back {
-    -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-    animation: 34s cloud-move-reverse infinite alternate linear;
-}
+  }
+  
+  .bar{
+    background-color: #EEE;
+    padding: 2px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  }
+  .bar::before{
+    content:  attr(data-skill);
+    background-color: #f3b0ff;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+  }
+  
+  .bar.front::before{
+    background-color: #ffcc33;
+  }
+  .bar.back::before{
+    background-color: #a6cfe3;
+  }
+  
+  .bar.learning::before{
+    width: calc(75% - 10px);
+  }
+  .bar.basicplus::before{
+    width: calc(70% - 10px);
+  }
+  .bar.intermediate::before{
+    width: calc(60% - 10px);
+  }
+  .bar.advanced::before{
+    width: calc(80% - 10px);
+  }
+  .bar.advancedplus::before{
+    width: calc(90% - 10px);
+  }
+  .bar.expert::before{
+    width: calc(100% - 10px);
+  }

@@ -30,6 +30,7 @@
      font-weight: var(--main-font-weigt);
      font-size: var(--main-font-size);
      text-align: var(--m-text-align);
+     font-family: Helvetica, Arial, sans-serif;
  }
  
  h1 {
@@ -96,11 +97,6 @@
      opacity: 0.6;
  }
  
- .hobbies {
-     list-style: var(--no-list-style);
-     color: var(--secondary-txt-color);
-     font-size: var(--main-font-size);
- }
  
  .botton__secondary {
      background-color: var(--secondary-txt-color);
@@ -142,6 +138,11 @@
      
      padding: 10px;
      margin: 10px;
+ }
+ .about-photo {
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 30%);
+   
  }
  .profile {
      display: flex;
@@ -225,42 +226,86 @@
      }
  }
  /* about page  */
- 
- @keyframes color-change {
-     0% {
-         fill: var(--header-bg-color);
-     }
-     100% {
-         fill: var(--hover-color);
-     }
- }
- 
- .sun {
-     animation: 4s color-change infinite alternate linear;
- }
- 
- @keyframes cloud-move {
-     from {
-         transform: translate(0, 50px);
-     }
-     to {
-         transform: translate(200px, 50px);
-     }
- }
- 
- .cloud-front {
-     animation: 30s cloud-move infinite alternate linear;
- }
- 
- @keyframes cloud-move-reverse {
-     from {
-         transform: translate(446px, 48px);
-     }
-     to {
-         transform: translate(100px, 48px);
-     }
- }
- 
- .cloud-back {
-     animation: 34s cloud-move-reverse infinite alternate linear;
- }
+ .hobbies {
+    list-style: none;
+    color: #357b70;
+    font-size: 18px;
+    list-style: var(--no-list-style);
+    color: var(--secondary-txt-color);
+    font-size: var(--main-font-size);
+}
+ .skill-container{
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  @keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-webkit-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-moz-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-o-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  
+  .bar{
+    background-color: #EEE;
+    padding: 2px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    
+  }
+  .bar::before{
+    content:  attr(data-skill);
+    background-color: #f3b0ff;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+  }
+  
+  .bar.front::before{
+    background-color: #ffcc33;
+  }
+  .bar.back::before{
+    background-color: #a6cfe3;
+  }
+  
+  .bar.learning::before{
+    width: calc(75% - 10px);
+  }
+  .bar.basicplus::before{
+    width: calc(70% - 10px);
+  }
+  .bar.intermediate::before{
+    width: calc(60% - 10px);
+  }
+  .bar.advanced::before{
+    width: calc(80% - 10px);
+  }
+  .bar.advancedplus::before{
+    width: calc(90% - 10px);
+  }
+  .bar.expert::before{
+    width: calc(100% - 10px);
+  }
+  
