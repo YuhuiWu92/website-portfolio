@@ -52,6 +52,10 @@
  footer {
      font-size: var(--big-font-size);
      font-weight: var(--secondary-font-weight);
+     display: flex;
+     flex-direction: column;
+     text-align: var(--m-text-align);
+     margin-top: 50px;
  }
  
  li {
@@ -82,7 +86,7 @@
      color: var(--main-txt-color);
      text-decoration: var(--no-text-decoration);
      margin: 5px;
-     padding: 2px;
+     padding: 8px;
      border-radius: 3px;
      box-shadow: 1px 2px 2px var(--main-border-shadow);
      transition-duration: 0.2s;
@@ -103,11 +107,7 @@
  }
  /* index page */
  
- .page-footer {
-     display: flex;
-     flex-direction: column;
-     text-align: var(--m-text-align);
- }
+
  /* header */
  
  .page-header {
@@ -135,9 +135,9 @@
  }
  /* main */
  .text-box {
-     
-     padding: 10px;
-     margin: 10px;
+    font: 20px sans-serif;
+    padding: 10px;
+    margin: 10px;
  }
  .about-photo {
     border-radius: 10px;
@@ -172,6 +172,7 @@
      text-align: var(--m-text-align);
      padding: 50px 50px;
  }
+
  /* work page */
  
  .grid {
@@ -196,7 +197,8 @@
      background-color: var(--gi-bg-color);
      text-align: var(--m-text-align);
      color: var(--gi-main-color);
-     padding: 5px 10px;
+     padding: 15px 10px;
+     border-radius: 0.5em;
      border: 1px solid var(--gi-main-color);
      box-shadow: 8px 5px 5px var(--gi-main-color);
  }
