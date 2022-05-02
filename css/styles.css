@@ -229,12 +229,17 @@
  }
  /* about page  */
  .hobbies {
-    list-style: none;
-    color: #357b70;
-    font-size: 18px;
     list-style: var(--no-list-style);
     color: var(--secondary-txt-color);
     font-size: var(--main-font-size);
+    list-style: none;
+    color: #357b70;
+    font-size: 20px;
+    text-align:left;
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 22px;
+    padding-right: 22px;
 }
  .skill-container{
     width: 50%;
