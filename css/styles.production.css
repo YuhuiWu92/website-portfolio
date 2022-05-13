@@ -266,14 +266,14 @@ footer div a img {
     border-radius: 0.5em;
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 414px) {
     .grid {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
 }
 
-@media all and (min-width: 500px) and (max-width: 750px) {
+@media all and (min-width: 414px) and (max-width: 750px) {
     .grid {
         -ms-grid-columns: 1fr 20px 1fr;
         grid-template-columns: 1fr 1fr;
